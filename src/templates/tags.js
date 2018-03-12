@@ -47,28 +47,3 @@ TagTemplate.propTypes = {
 
 // export default TagTemplate
 
-export const tagQuery = graphql`
-  query TagPage($tag: String) {
-		allContentfulBlogPost(filter: {tags:{eq: $tag}}){
-			edges {
-				node {
-					title
-					slug
-					tags
-					description {
-            id
-            description
-					}
-					heroImage {
-            id
-            file {
-              url
-              fileName
-              contentType
-						}
-          }
-				}
-			}
-		}
-  }
-  `

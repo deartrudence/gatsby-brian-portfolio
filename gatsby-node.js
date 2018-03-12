@@ -7,19 +7,39 @@ exports.createPages = ({graphql, boundActionCreators}) => {
 	const {createPage} = boundActionCreators
 	return new Promise((resolve, reject) => {
 		const blogPostTemplate = path.resolve('src/templates/blog-posts.js')
-		const tagPageTemplate = path.resolve('src/templates/tags.js')
-		const personPageTemplate = path.resolve('src/templates/people.js')
+		// const tagPageTemplate = path.resolve('src/templates/tags.js')
+		// const personPageTemplate = path.resolve('src/templates/people.js')
 		resolve(
 			graphql(`
 			{
-				allContentfulBlogPost(limit:100){
+				allContentfulPhotoGallery {
 					edges {
 						node {
 							id
 							slug
-							tags
-							author{
-								name
+							title {
+								id
+								title
+							}
+							images {
+								id
+								photo {
+									id
+									description
+									file {
+										url
+										fileName
+										contentType
+									}	
+								}
+							}
+						}
+						next{
+							id
+							slug
+							title {
+								id
+								title
 							}
 						}
 					}
@@ -30,7 +50,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
 					reject(result.errors)
 				}
 				createPaginatedPages({
-					edges: result.data.allContentfulBlogPost.edges,
+					edges: result.data.allContentfulPhotoGallery.edges,
 					createPage: createPage,
 					pageTemplate: "src/templates/index.js",
 					pageLength: 5,
@@ -39,43 +59,37 @@ exports.createPages = ({graphql, boundActionCreators}) => {
 				})
 				const tagList = []
 				const peopleList = []
-				result.data.allContentfulBlogPost.edges.forEach((edge) => {
-					if(edge.node.tags) {
-						edge.node.tags.forEach(tag => {
-							tagList.push(tag)
-						})
-					}
-					if(edge.node.author){
-						peopleList.push(edge.node.author.name)
-					}
-					console.log(peopleList)
+				const blogs = result.data.allContentfulPhotoGallery.edges
+				result.data.allContentfulPhotoGallery.edges.forEach((edge, index) => {
+					const next = index === blogs.length - 1 ? false : blogs[index + 1];
 					createPage({
 						path: edge.node.slug,
 						component: blogPostTemplate,
 						context: {
-							slug: edge.node.slug
+							slug: edge.node.slug,
+							next: next
 						}
 					})
 				})
-				// return
-				tagList.forEach(tag => {
-					createPage({
-						path: `/tags/${_.kebabCase(tag)}`,
-						component: tagPageTemplate,
-						context: {
-							tag
-						}
-					})
-				})
-				peopleList.forEach(person => {
-					createPage({
-						path: `/people/${_.kebabCase(person)}`,
-						component: personPageTemplate,
-						context: {
-							person
-						}
-					})
-				})
+				return
+				// tagList.forEach(tag => {
+				// 	createPage({
+				// 		path: `/tags/${_.kebabCase(tag)}`,
+				// 		component: tagPageTemplate,
+				// 		context: {
+				// 			tag
+				// 		}
+				// 	})
+				// })
+				// peopleList.forEach(person => {
+				// 	createPage({
+				// 		path: `/people/${_.kebabCase(person)}`,
+				// 		component: personPageTemplate,
+				// 		context: {
+				// 			person
+				// 		}
+				// 	})
+				// })
 			})
 		)
 	})

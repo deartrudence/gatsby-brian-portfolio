@@ -47,31 +47,3 @@ PersonTemplate.propTypes = {
 
 // export default TagTemplate
 
-export const personQuery = graphql`
-  query PersonPage($person: String) {
-		allContentfulPerson(filter: {name: {eq: $person}}) {
-			edges {
-				node{
-					name
-					blog_post {
-						id
-						title
-						slug
-						tags
-						description{
-							description
-						}
-						heroImage {
-							id
-							file {
-								url
-								fileName
-								contentType
-							}
-						}
-					}
-				}
-			}
-		}
-  }
-  `

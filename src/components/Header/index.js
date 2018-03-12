@@ -1,43 +1,56 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Link from 'gatsby-link'
 import './index.css'
 
-const Header = () => (
-  <div
-    style={{
-      background: 'white',
-      marginBottom: '1.45rem',
-      boxShadow: '2px 2px 10px rgba(0,0,0,0.15)',
-      position: 'fixed',
-      zIndex: 2,
-      width: '100%',
-      top: 0
+class Header extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.toggleSocial = this.toggleSocial.bind(this);
+    this.state = {
+      social_classes: "hidden"
+      }
+    }
+  
+    toggleSocial = () => {
+      if(this.state.social_classes === "hidden"){
+        this.setState({social_classes: ""})
+      }else {
+        this.setState({social_classes: "hidden"})
 
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem'
-      }}
-    >
-      <h1 style={{ 
-        margin: 0 ,
-        fontFamily: 'Lato'
-        }}>
+      }
+    }
+  render() {
+    return (
+    <nav>
+      <div className="nav-wrapper">
         <Link
           to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
         >
-          Lipstech (blog)
+          Brian Banton
         </Link>
-      </h1>
-    </div>
-  </div>
+        <Link
+        to="/"
+        className="about"
+        >
+        About
+        </Link>
+        <div
+          className="social"
+          onMouseEnter={this.toggleSocial}
+          onMouseLeave={this.toggleSocial}
+        >
+          Social
+          <ul className={this.state.social_classes}>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Vimeo</a></li>
+            <li><a href="#">Tumbler</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 )
-
+}
+}
 export default Header
