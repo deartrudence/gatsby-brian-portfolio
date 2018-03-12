@@ -47,7 +47,7 @@ export const pageQuery = graphql`
             id
             subtext
           }
-          title{
+          title {
             title
           }
           coverImage{
@@ -64,8 +64,7 @@ export const pageQuery = graphql`
                 url
                 fileName
                 contentType
-              }
-              
+              } 
             }
           }
         }
