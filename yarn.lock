@@ -331,7 +331,7 @@ axios@^0.16.1:
     follow-redirects "^1.2.3"
     is-buffer "^1.1.5"
 
-"axios@github:contentful/axios#fix/https-via-http-proxy":
+axios@contentful/axios#fix/https-via-http-proxy:
   version "0.17.1"
   resolved "https://codeload.github.com/contentful/axios/tar.gz/4b06f4a63db3ac16c99f7c61b584ef0e6d11f1af"
   dependencies:
@@ -3250,6 +3250,12 @@ gatsby-paginate@^1.0.12:
   resolved "https://registry.yarnpkg.com/gatsby-paginate/-/gatsby-paginate-1.0.12.tgz#18e4143592392835b48f02317c663ea6eb7f0049"
   dependencies:
     path "^0.12.7"
+
+gatsby-plugin-debug-build@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-debug-build/-/gatsby-plugin-debug-build-1.0.0.tgz#404f28d0f4b6f89cfe0235ebcda66f21d1487926"
+  dependencies:
+    webpack "^1.13.3"
 
 gatsby-plugin-google-fonts@0.0.3:
   version "0.0.3"

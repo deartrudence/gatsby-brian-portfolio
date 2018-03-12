@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import PostTags from "../components/PostTags";
-import PersonCard from "../components/PersonCard";
 import Link from 'gatsby-link'
 import './blog-post.css'
 import nextArrow from '../assets/next-arrow.png'
+import Header from '../components/Header'
 
 class BlogPost extends Component {
 	render(){
 		const { next } = this.props.pathContext;
-		console.log(next)
 		const {title} = this.props.data.contentfulPhotoGallery
+		const {slug} = this.props.data.contentfulPhotoGallery
 		const { description  } = this.props.data.contentfulPhotoGallery
 		const {creatives} = this.props.data.contentfulPhotoGallery
 		const {designers} = this.props.data.contentfulPhotoGallery
 		const {images} = this.props.data.contentfulPhotoGallery
-		// const {id} = this.props.data.contentfulBlogPost
 		const {heroImage} = this.props.data.contentfulPhotoGallery
-		// const {publishDate} = this.props.data.contentfulBlogPost
-		// const {size} = this.props.data.contentfulBlogPost
-		// let image_classes = `image individual + ${size}`
 		return (
 			<div>
+				<Header menuItem={title.title} menuLink="/" close={true}/>
 				{heroImage ? 
 					<img src={heroImage.file.url} alt=""/> : null
 				}
@@ -50,7 +46,8 @@ class BlogPost extends Component {
 
 				{images &&
 					images.map(image => (
-					<img src={image.photo.file.url} alt=""/>
+						image.photo && 
+							<img key={image.id} src={image.photo.file.url} alt=""/>
 					
 				) )}
 				{next.node &&

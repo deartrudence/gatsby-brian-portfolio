@@ -21,7 +21,6 @@ const TemplateWrapper = ({ children, data }) => (
         maxWidth: 1340
       }}
     >
-    <Header/>
       {children()}
     </div>
   </div>

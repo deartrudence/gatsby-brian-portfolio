@@ -206,6 +206,10 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 img {
   max-width: 100%;
   margin-left: 0;
