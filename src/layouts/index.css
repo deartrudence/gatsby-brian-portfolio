@@ -57,10 +57,10 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
+/* h1 {
   font-size: 2em;
   margin: .67em 0;
-}
+} */
 mark {
   background-color: #ff0;
   color: #000;
@@ -219,7 +219,17 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
+  margin-bottom: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+@media(max-width: 500px){
+  .wrapper {
+    max-width: 90%;
+  }
 }
 h1 {
   margin-left: 340px;
@@ -237,6 +247,15 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 96px;
   line-height: 1.04;
+}
+@media (max-width: 500px) { 
+  h1{ 
+   font-size: 36px;
+   margin-top: 79px;
+   margin-left: 0;
+   margin-bottom: 65px;
+   line-height: 43px;
+  }
 }
 h2 {
   margin-left: 0;
@@ -387,8 +406,9 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-family: 'Abel', sans-serif;
-  letter-spacing: 0.6px;
+  /* letter-spacing: 0.6px; */
   font-size: 18px;
+  line-height: 19px;
 }
 figure {
   margin-left: 0;

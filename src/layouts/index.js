@@ -15,12 +15,7 @@ const TemplateWrapper = ({ children, data }) => (
       ]}
       
     />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 1340
-      }}
-    >
+    <div className="wrapper">
       {children()}
     </div>
   </div>
