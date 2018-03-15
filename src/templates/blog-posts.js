@@ -19,7 +19,7 @@ class BlogPost extends Component {
 			<div>
 				<Header menuItem={title.title} menuLink="/" close={true}/>
 				{heroImage ? 
-					<img src={heroImage.file.url} alt=""/> : null
+					<img className="hero-image" src={heroImage.file.url} alt=""/> : null
 				}
 				<div className="info">
 					<div className="credits">

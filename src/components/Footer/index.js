@@ -20,7 +20,7 @@ const Footer = () => (
 				</Link>
 			</div>
 			<div className="copyright">
-				<p>Copyright</p>
+				<p>Copyright </p>
 				<p>2018</p>
 			</div>
 	</footer>

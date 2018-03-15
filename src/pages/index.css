@@ -33,6 +33,10 @@
 		width: 100%;
 		margin: 0 10px 30px 10px;
 	}
+	.about-page .project-tile{
+		border-top: 1px solid black;
+		padding-top: 12px;
+	}
 }
 .project-tile p {
 	margin: 12px 0;
@@ -119,6 +123,17 @@
 }
 .about-page .project-tile p:first-child {
  margin-bottom: 20px;
+}
+@media(max-width: 500px){
+	.about-page .about-description {
+		display:none;
+	}
+	.about-page > h1 {
+		margin-bottom: 58px;
+	}
+	.about-page .project-tile p:first-child {
+		margin-bottom: 14px;
+	}
 }
 .bold {
 	font-weight: bold;
