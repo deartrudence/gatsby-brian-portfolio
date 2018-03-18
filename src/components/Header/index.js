@@ -35,13 +35,18 @@ class Header extends Component {
       console.log('ex', this.state.ex)
     }
     enterSocial = () => {
-      this.setState({social_classes: ""})
+      if(window.innerWidth > 500){
+        console.log('enter social')
+        this.setState({social_classes: ""})
+      }
     }
     leaveSocial = () => {
+      console.log('leave social')
       this.setState({social_classes: "hidden"})
     }
 
   render() {
+    console.log('in render',this.state.social_classes )
     return (
       <nav>
         <div className="nav-wrapper">
@@ -73,9 +78,9 @@ class Header extends Component {
               <ul className={this.state.social_classes}>
                 <li className="about-work mobile-only"><Link to={this.props.menuLink}>{this.props.menuItem}</Link></li>
                 <li><a href="#">Instagram</a></li>
-                <li><a href="#">Vimeo</a></li>
-                <li><a href="#">Tumbler</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li><a href="https://vimeo.com/brianbanton" target="_blank">Vimeo</a></li>
+                <li><a href="http://finnegan-appelbautum.tumblr.com/" target="_blank">Tumbler</a></li>
+                  <li><a href="https://www.linkedin.com/in/bbanton/" target="_blank">LinkedIn</a></li>
               </ul>
             </div>
           }

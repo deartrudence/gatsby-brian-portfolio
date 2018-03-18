@@ -29,7 +29,7 @@ class BlogPost extends Component {
 										<p>{creative}</p>
 									))
 								}
-						<p>Designers:</p>
+						<p className="designers">Designers:</p>
 						{designers && 
 								designers.map(designer => (
 									<p>{designer}</p>
@@ -79,6 +79,8 @@ export const pageQuery = graphql`
 	query blogPostQuery($slug: String!){
 		contentfulPhotoGallery(slug: { eq: $slug }){
 			slug
+			creatives
+			designers
 			heroImage{
 				file {
 					url

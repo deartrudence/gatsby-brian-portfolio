@@ -2,15 +2,9 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Brian Banton',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`abel`, `gruppo`, `raleway\:400,700,900`, 'lato\:900', 'ovo']
-      }
-    },
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -19,6 +13,8 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
 };

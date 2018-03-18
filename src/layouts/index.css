@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: "SuisseBPSerif", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -182,7 +182,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -197,7 +197,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Abel', serif;
+  font-family: 'SuisseBPIntl', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -224,7 +224,8 @@ img {
 }
 .wrapper {
   margin: 0 auto;
-  max-width: 1340px;
+  width: 1340px;
+  max-width: 100%;
 }
 @media(max-width: 500px){
   .wrapper {
@@ -241,8 +242,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 100px;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'SuisseBPSerif', serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   font-size: 96px;
@@ -267,8 +267,6 @@ h2 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -284,8 +282,6 @@ h3 {
   padding-top: 0;
   margin-bottom: 40px;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -301,8 +297,6 @@ h4 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -318,8 +312,6 @@ h5 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -335,8 +327,6 @@ h6 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -405,10 +395,14 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 0;
-  font-family: 'Abel', sans-serif;
   /* letter-spacing: 0.6px; */
   font-size: 18px;
-  line-height: 19px;
+  line-height: 29px;
+}
+@media(max-width: 500px){
+  p{
+    line-height: 19px;
+  }
 }
 figure {
   margin-left: 0;
@@ -536,7 +530,7 @@ dt {
 th {
   font-weight: bold;
 }
-li {
+/* li {
   margin-bottom: calc(1.45rem / 2);
 }
 ol li {
@@ -554,8 +548,8 @@ li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
-}
-blockquote *:last-child {
+} */
+/* blockquote *:last-child {
   margin-bottom: 0;
 }
 li *:last-child {
@@ -566,7 +560,7 @@ p *:last-child {
 }
 li > p {
   margin-bottom: calc(1.45rem / 2);
-}
+} */
 code {
   font-size: 0.85rem;
   line-height: 1.45rem;
@@ -661,3 +655,5 @@ pre tt:after {
   }
 
 }
+
+

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SuisseBPSerif';
+  src: url('./fonts/SuisseBPSerif.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SuisseBPIntl';
+  src: url('./fonts/SuisseBPIntl-Medium.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
