@@ -26,13 +26,13 @@ class BlogPost extends Component {
 						<p>Creative Direction:</p>
 							{creatives &&
 									creatives.map(creative => (
-										<p>{creative}</p>
+										<p className="person">{creative}</p>
 									))
 								}
 						<p className="designers">Designers:</p>
 						{designers && 
 								designers.map(designer => (
-									<p>{designer}</p>
+									<p className="person">{designer}</p>
 								))
 							}
 					</div> 

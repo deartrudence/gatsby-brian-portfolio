@@ -34,8 +34,8 @@ nav {
 	text-align: right;
 	cursor: pointer;
 }
-.social > ul > li {
-	margin-bottom: 10px;
+.social  ul  li {
+	line-height: 29px;
 }
 .social-icon{
 	display: inline-block;
@@ -90,6 +90,9 @@ nav {
 		font-size: 36px;
     line-height: 43px;
     text-align: left;
+	}
+	.social  ul  li {
+		line-height: 42px;
 	}
 	.about-work {
 		padding: 30px 0 58px 0;

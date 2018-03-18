@@ -23,6 +23,12 @@ footer {
 .address {
 	margin-left: 340px;
 }
+.address p, .address a {
+	font-family: 'SuisseBPSerif', serif;
+}
+.address p.contact {
+	font-family: 'SuisseBPIntl', sans-serif;
+}
 @media(max-width: 500px){
 	.address{
 		margin-left: 0;
