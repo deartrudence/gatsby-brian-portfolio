@@ -10,10 +10,12 @@
 }
 .subtext {
 	color: #B4B4B4;
+	padding-top: 9px;
 }
 .select-projects {
-	margin-left: 340px;
-	font-size: 24px;
+	/*margin-left: 340px;*/
+	margin-left: calc(25% + 5px);
+	font-size: 21px;
 	margin-bottom: 38px;
 }
 @media(max-width: 500px){
@@ -24,8 +26,13 @@
 	}
 }
 .project-tile {
-	width: 320px;
-	margin: 0 10px 60px 10px;
+	width: calc(25% - 20px);
+	margin: 0 10px 125px 10px;
+}
+@media(max-width: 950px){
+	.project-tile {
+		width: calc(50% - 20px);
+	}
 }
 @media(max-width: 500px){
 	.project-tile {
@@ -39,9 +46,9 @@
 }
 .project-tile p {
 	margin: 0px 0;
-	font-size: 24px;
+	font-size: 21px;
 	transition: 0.3s;
-	line-height: 29px;
+	/*line-height: 29px;*/
 }
 @media(max-width: 500px){
 	.project-tile p {
@@ -53,9 +60,9 @@
 }
 .project-tile-image {
 	position: relative;
-	height: 457px;
 	background: black;
-	width: 99%;
+	width: 100%;
+	margin-bottom: 25px;
 }
 @media(max-width: 500px){
 	.project-tile-image{
@@ -64,9 +71,10 @@
 	}
 }
 .project-tile-image img {
-	position: absolute;
+	/*position: absolute;*/
 	transition: 0.3s;
 	display: block;
+	width: 100%;
 }
 @media(max-width: 500px){
 	.project-tile-image img{
@@ -80,7 +88,7 @@
 	top: 0px;
 	left: 0px;
 	height: 100%;
-  width: 99%;
+  width: 100%;
 	background: black;
 	z-index: -1;
 	transition: 0.3s;
@@ -90,15 +98,15 @@
 		content: none;
 	}
 }
-.project-tile:hover .project-tile-image img{
-	top: -12px;
-	right: -12px;
+.project-tile:hover .project-tile-image::after{
+	top: 10px;
+	left: -10px;
 }
 .project-tile p.title{
 	font-family: 'SuisseBPSerif', serif;
 }
 .project-tile:hover p.title{
-	color: #bada55;
+	color: #0CE1B7;
 }
 @media(max-width: 500px){
 	.project-tile p.title{
@@ -106,22 +114,23 @@
 	}
 }
 .about-page .about-description{
-	margin-left: 340px;
+	/*margin-left: 340px; */
+	margin-left: calc(25% + 5px);
 	max-width: 800px;
-	font-size: 24px;
+	font-size: 21px;
 	font-family: 'SuisseBPSerif', serif;
-	line-height: 29px;
-	margin-bottom: 118px;
+	line-height: 25px;
+	margin-bottom: 150px;
 }
 .about-page > h1 {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 .about-page > .wrapper-grid {
-	margin-bottom: 140px;
+	margin-bottom: 500px;
 }
 
 .about-page .project-tile p:first-child {
- margin-bottom: 20px;
+ margin-bottom: 25px;
  font-family: 'SuisseBPIntl', sans-serif;
 }
 .about-page .project-tile p {

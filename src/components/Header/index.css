@@ -1,7 +1,7 @@
 nav {
 	/* position: relative; */
-	font-size: 24px;
-	padding: 42px 0 36px 0;
+	font-size: 21px;
+	padding: 40px 0 39px 0;
 	position: fixed;
 	background-color: white;
 	z-index: 100;
@@ -10,14 +10,15 @@ nav {
 	top: 0;
 }
 .nav-wrapper {
-	width: 1340px;
+	width: 1716px;
 	position: relative;
-	max-width: 100%;
+	max-width: 90%;
 }
 
 .about {
 	position: absolute;
-	left: 340px;
+	/*left: 340px;*/
+	left: calc(25% + 5px);
 }
 .social {
 	position: absolute;
@@ -35,7 +36,7 @@ nav {
 	cursor: pointer;
 }
 .social  ul  li {
-	line-height: 29px;
+	line-height: 21px;
 }
 .social-icon{
 	display: inline-block;
@@ -102,7 +103,7 @@ nav {
 	display: none;
 }
 .close p {
-	font-size: 24px;
+	font-size: 21px;
 }
 .close img {
 	margin-right: 20px;

@@ -47,7 +47,7 @@ class BlogPost extends Component {
 				{images &&
 					images.map(image => (
 						image.photo && 
-							<img key={image.id} src={image.photo.file.url} alt=""/>
+							<img className="project-images" key={image.id} src={image.photo.file.url} alt=""/>
 					
 				) )}
 				{next.node &&
@@ -58,8 +58,8 @@ class BlogPost extends Component {
 					<div className="next">
 						<p>Next Project</p>
 						<h3>{next.node.title.title}</h3>
+						<img src={nextArrow} alt=""/>
 					</div>
-					<img src={nextArrow} alt=""/>
 					</Link>
 
 				}

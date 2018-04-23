@@ -224,18 +224,19 @@ img {
 }
 .wrapper {
   margin: 0 auto;
-  width: 1340px;
-  max-width: 100%;
+  width: 1716px;
+  max-width: 90%;
 }
 @media(max-width: 500px){
   .wrapper {
-    max-width: 90%;
+    max-width: 89%;
   }
 }
 h1 {
-  margin-left: 340px;
+  /*margin-left: 340px;*/
+  margin-left: calc(25% + 5px);
   margin-right: 0;
-  margin-top: 164px;
+  margin-top: 200px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -245,7 +246,7 @@ h1 {
   font-family: 'SuisseBPSerif', serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  font-size: 96px;
+  font-size: 72px;
   line-height: 1.04;
 }
 @media (max-width: 500px) { 
