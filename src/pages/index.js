@@ -27,7 +27,7 @@ const IndexPage = ({data}) => (
     <Header menuItem="About"menuLink="/about" />
     <h1>Inter– <br/> disciplinary <br/> designer <br/> & director.</h1>
     <p className="select-projects">Selected Projects</p>
-    <div id="indexPage" className="wrapper-grid">
+    <div id="indexPage" className=" index-page wrapper-grid">
       {data.allContentfulPhotoGallery.edges.map((edge) => <BlogPost key={edge.node.id} node={edge.node} /> )}
     </div>
     <Footer />

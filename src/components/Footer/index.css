@@ -7,8 +7,8 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background: black;
-  color: white;
+/*	background: black;
+  color: white;*/
 }
 @media(max-width: 500px){
 	footer{

@@ -52,6 +52,7 @@ class Header extends Component {
         <div className="nav-wrapper">
           <Link
             to="/"
+            className="home-link"
           >
             Brian Banton
           </Link>
@@ -79,7 +80,7 @@ class Header extends Component {
                 <li className="about-work mobile-only"><Link to={this.props.menuLink}>{this.props.menuItem}</Link></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="https://vimeo.com/brianbanton" target="_blank">Vimeo</a></li>
-                <li><a href="http://finnegan-appelbautum.tumblr.com/" target="_blank">Tumbler</a></li>
+                <li><a href="http://finnegan-appelbautum.tumblr.com/" target="_blank">Tumblr</a></li>
                   <li><a href="https://www.linkedin.com/in/bbanton/" target="_blank">LinkedIn</a></li>
               </ul>
             </div>

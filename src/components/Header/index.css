@@ -20,11 +20,44 @@ nav {
 	/*left: 340px;*/
 	left: calc(25% + 5px);
 }
+.about:hover::after {
+	width: 100%;
+}
+.about::after {
+	content: '';
+	height: 1px;
+	width: 0;
+	background: black;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	transition: 0.3s;
+}
+.home-link {
+	position: relative;
+}
+.home-link:hover::after {
+	width: 100%;
+}
+.home-link::after {
+	content: '';
+	height: 1px;
+	width: 0;
+	background: black;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	transition: 0.3s;
+}
 .social {
 	position: absolute;
 	right: 0;
 	text-align: right;
 	display: inline;
+	background: WHITE;
+  padding: 10px;
+  padding-top: 0;
+  cursor: pointer;
 }
 .social p, .social a {
 }

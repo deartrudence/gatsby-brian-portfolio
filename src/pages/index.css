@@ -10,13 +10,16 @@
 }
 .subtext {
 	color: #B4B4B4;
-	padding-top: 9px;
+	/*padding-top: 9px;*/
 }
 .select-projects {
 	/*margin-left: 340px;*/
 	margin-left: calc(25% + 5px);
 	font-size: 21px;
-	margin-bottom: 38px;
+	margin-bottom: 20px;
+}
+.index-page {
+	margin-bottom: 500px;
 }
 @media(max-width: 500px){
 	.select-projects{
@@ -62,7 +65,7 @@
 	position: relative;
 	background: black;
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 @media(max-width: 500px){
 	.project-tile-image{
