@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link'
 import './blog-post.css'
@@ -46,10 +47,21 @@ class BlogPost extends Component {
 
 				{images &&
 					images.map(image => (
-						image.photo && 
-							<img className="project-images" key={image.id} src={image.photo.file.url} alt=""/>
+						image.useVideo ? 
+						<div className="player-wrapper">
+							<ReactPlayer
+								url='https://vimeo.com/159687610'
+								playing
+								className='react-player'
+								width='100%'
+								height='100%' />
+							</div> :
+
+							image.photo && 
+								<img className="project-images" key={image.id} src={image.photo.file.url} alt=""/>
 					
 				) )}
+				
 				{next.node &&
 					<Link
 					to={next.node.slug}
@@ -101,6 +113,8 @@ export const pageQuery = graphql`
 						url
 					}
 				}
+				useVideo
+				vimeoId
 			}
 		}
 	} `
