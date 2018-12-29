@@ -30,7 +30,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
 										url
 										fileName
 										contentType
-									}	
+									}
 								}
 							}
 						}

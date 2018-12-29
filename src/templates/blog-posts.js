@@ -48,10 +48,17 @@ class BlogPost extends Component {
 				{images &&
 					images.map(image => (
 						image.useVideo ? 
-						<div className="player-wrapper">
+						<div key={image.id} className="player-wrapper">
+						<p>VIDEO ID {image.vimeoId}</p>
 							<ReactPlayer
-								url='https://vimeo.com/159687610'
+								url={`https://vimeo.com/${image.vimeoId}`}
 								playing
+								loop
+								config={{
+									vimeo: {
+										playerOptions: { autoplay: true, setVolume: 0}
+									}
+								}}
 								className='react-player'
 								width='100%'
 								height='100%' />
