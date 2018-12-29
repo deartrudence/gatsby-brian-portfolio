@@ -38,7 +38,7 @@ const About = () => (
         <p>Sid Lee — Toronto</p>
         <p>The Office of Gilbert Li</p>
         <p>Underline Studio</p>
-        <p> Cundari SFP
+        <p> Cundari SFP</p>
       </div>
       <div className="project-tile desktop-only">
         <p className="about-title">Selected Clients</p>
