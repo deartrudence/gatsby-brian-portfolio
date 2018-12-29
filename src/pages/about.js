@@ -8,7 +8,7 @@ const About = () => (
   <Header menuItem="Work" menuLink="/" />
     <h1 className="desktop-only">Profile</h1>
     <h1 className="mobile-only">Inter– <br /> disciplinary <br /> designer <br /> & director.</h1>
-    <p className="about-description">Heterosis is a three-dimensional typeface made from plexiglas and transparent elastic. The typeface is informed by a rigorous distillation of ideas relating to the representation of mixed-race identity. Cultural theorist Homi Bhabha asserts that cultural hybridity produces a “third space” where previously unimaginable possibilities exist. These three-dimensional letters form in the middle space between two, essentially, one-dimensional vectors situated on parallel, opposing planes. The result is a kinetic alphabet that occupies the third and fourth dimensions.</p>
+    <p className="about-description">A multidisciplinary designer, originally from Toronto, Canada, Brian has worked as a senior designer at Pentagram’s New York City office and a principal designer at frog’s Brooklyn office. Before leaving Canada, where he completed Bachelor’s and Master’s Degrees in design, Brian designed award winning books, identity systems, and motion graphics for cultural and non-profit institutions. Currently, he is creating compelling experiences for virtual reality at Oculus VR at Facebook in Menlo Park, California.</p>
     <div className="wrapper-grid">
       <div className="project-tile">
         <p className="about-title">Services</p>
