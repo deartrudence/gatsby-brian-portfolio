@@ -32,11 +32,13 @@ const About = () => (
       </div>
       <div className="project-tile">
         <p className="about-title">Experience</p>
-        <p>frog -- New York</p>
-        <p>Pentagram -- New York</p>
-        <p>Sid Lee -- Toronto</p>
+        <p>Oculus VR at Facebook</p>
+        <p>frog — New York</p>
+        <p>Pentagram — New York</p>
+        <p>Sid Lee — Toronto</p>
         <p>The Office of Gilbert Li</p>
         <p>Underline Studio</p>
+        <p> Cundari SFP
       </div>
       <div className="project-tile desktop-only">
         <p className="about-title">Selected Clients</p>
