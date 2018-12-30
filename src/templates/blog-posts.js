@@ -49,7 +49,6 @@ class BlogPost extends Component {
 					images.map(image => (
 						image.useVideo ? 
 						<div key={image.id} className="player-wrapper">
-						<p>VIDEO ID {image.vimeoId}</p>
 							<ReactPlayer
 								url={`https://vimeo.com/${image.vimeoId}`}
 								playing
