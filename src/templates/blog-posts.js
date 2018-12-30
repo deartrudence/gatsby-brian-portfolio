@@ -30,7 +30,7 @@ class BlogPost extends Component {
 										<p className="person">{creative}</p>
 									))
 								}
-						<p className="designers">Designers:</p>
+						<p className="designers">Design:</p>
 						{designers && 
 								designers.map(designer => (
 									<p className="person">{designer}</p>
