@@ -22,13 +22,13 @@ const About = () => (
       </div>
       <div className="project-tile desktop-only">
         <p className="about-title">Recognition</p>
-        <p>Print</p>
-        <p>Branding</p>
-        <p>Motion</p>
-        <p>Web</p>
-        <p>Product</p>
-        <p>Interaction</p>
-        <p>Mixed Reality</p>
+        <p>Art Directors Club, NY</p>
+        <p>Type Directors Club, NY</p>
+        <p>Graphis</p>
+        <p>Advertising and Design Club of Canada</p>
+        <p>Applied Arts</p>
+        <p>Communication Arts</p>
+        <p>RGD Social Good Awards</p>
       </div>
       <div className="project-tile">
         <p className="about-title">Experience</p>
@@ -43,9 +43,12 @@ const About = () => (
       <div className="project-tile desktop-only">
         <p className="about-title">Selected Clients</p>
         <p>Rockefeller Center</p>
-        <p>National Gallery</p>
+        <p>National Gallery, DC</p>
         <p>Images Festival</p>
         <p>Magenta Foundation</p>
+        <p>Reebok</p>
+        <p>Nike</p>
+        
       </div>
     </div>
     <Footer />
