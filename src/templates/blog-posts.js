@@ -55,7 +55,7 @@ class BlogPost extends Component {
 								loop
 								config={{
 									vimeo: {
-										playerOptions: { autoplay: true, setVolume: 0}
+										playerOptions: { autoplay: false, setVolume: 0}
 									}
 								}}
 								className='react-player'
