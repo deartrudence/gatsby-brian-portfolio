@@ -25,7 +25,7 @@ const About = () => (
         <p>Art Directors Club, NY</p>
         <p>Type Directors Club, NY</p>
         <p>Graphis</p>
-        <p>Advertising and Design Club<br>  of Canada</p>
+        <p>Advertising and Design Club <br />  of Canada</p>
         <p>Applied Arts</p>
         <p>Communication Arts</p>
         <p>RGD Social Good Awards</p>
