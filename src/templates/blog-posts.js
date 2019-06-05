@@ -30,7 +30,7 @@ class BlogPost extends Component {
 										<p className="person">{creative}</p>
 									))
 								}
-						<p className="designers">Designers:</p>
+						<p className="designers">Design:</p>
 						{designers && 
 								designers.map(designer => (
 									<p className="person">{designer}</p>
@@ -55,7 +55,7 @@ class BlogPost extends Component {
 								loop
 								config={{
 									vimeo: {
-										playerOptions: { autoplay: true, setVolume: 0}
+										playerOptions: { autoplay: false, setVolume: 0}
 									}
 								}}
 								className='react-player'

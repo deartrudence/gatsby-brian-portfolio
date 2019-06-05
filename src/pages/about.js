@@ -25,7 +25,7 @@ const About = () => (
         <p>Art Directors Club, NY</p>
         <p>Type Directors Club, NY</p>
         <p>Graphis</p>
-        <p>Advertising and Design Club of Canada</p>
+        <p>Advertising and Design Club <br />  of Canada</p>
         <p>Applied Arts</p>
         <p>Communication Arts</p>
         <p>RGD Social Good Awards</p>
@@ -42,12 +42,27 @@ const About = () => (
       </div>
       <div className="project-tile desktop-only">
         <p className="about-title">Selected Clients</p>
-        <p>Rockefeller Center</p>
-        <p>National Gallery, DC</p>
+        <p>Art Gallery of Ontario</p>
+        <p>Canadian Art Foundation</p>
+        <p>CIBC</p>
+        <p>Dyson Canada</p>
         <p>Images Festival</p>
+        <p>InterAccess </p>
+        <p>Electronic Media Arts</p>
         <p>Magenta Foundation</p>
-        <p>Reebok</p>
+        <p>National Gallery of Art, DC</p>
         <p>Nike</p>
+        <p>Precedent Magazine</p>
+        <p>Rainbow Room</p>
+        <p>Reebok</p>
+        <p>Reel Asian</p>
+        <p>Rockefeller Center</p>
+        <p>Rotman Magazine</p>
+        <p>Scotiabank</p>
+        <p>TJX Canada</p>
+        <p>University of Toronto</p>
+        <p>York University</p>
+        <p>Washington DC Tourism</p>
         
       </div>
     </div>
