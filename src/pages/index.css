@@ -118,6 +118,7 @@
 }
 .about-page .about-description{
 	/*margin-left: 340px; */
+	background: white;
 	margin-left: calc(25% + 5px);
 	max-width: 800px;
 	font-size: 21px;
@@ -130,6 +131,11 @@
 }
 .about-page > .wrapper-grid {
 	margin-bottom: 500px;
+}
+.cover-page > .wrapper-grid {
+	margin-top:  150px;
+	margin-bottom: 300px;
+	padding: 0 10px;
 }
 
 .about-page .project-tile p:first-child {

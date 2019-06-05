@@ -1,18 +1,19 @@
 nav {
-	/* position: relative; */
 	font-size: 21px;
 	padding: 40px 0 39px 0;
 	position: fixed;
 	background-color: white;
 	z-index: 100;
 	width: 100%;
-	/* margin: 0 auto; */
 	top: 0;
+	margin-left: -10px;
+	padding-left: 10px;
 }
 .nav-wrapper {
 	width: 1716px;
 	position: relative;
 	max-width: 90%;
+	padding-left: 10px;
 }
 
 .about {
@@ -110,6 +111,8 @@ nav {
 	nav {
 		padding: 20px 0 20px 0;
 		font-size: 16px;
+		margin-left: 0px;
+		padding-left: 0px;
 	}
 	.nav-wrapper{
 		max-width: 90%;
