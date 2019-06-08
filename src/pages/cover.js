@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 
-const Cover = () => (
+const Cover1 = () => (
 	<div className="cover-page">
 		<Header menuItem="Work" menuLink="/" />
 		{/* <h1 className="desktop-only">Profile</h1>
@@ -35,4 +35,4 @@ const Cover = () => (
 	</div>
 )
 
-export default Cover
+export default Cover1

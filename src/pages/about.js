@@ -5,7 +5,7 @@ import Header from '../components/Header'
 
 const About = () => (
   <div className="about-page">
-  <Header menuItem="Work" menuLink="/" />
+  <Header menuItem="Work" menuLink="/work" />
     <h1 className="desktop-only">Profile</h1>
     <h1 className="mobile-only">Inter– <br /> disciplinary <br /> designer <br /> & director.</h1>
     <p className="about-description">A multidisciplinary designer, originally from Toronto, Canada, Brian has worked as a senior designer at Pentagram’s New York City office and a principal designer at frog’s Brooklyn office. Before leaving Canada, where he completed Bachelor’s and Master’s Degrees in design, Brian designed award winning books, identity systems, and motion graphics for cultural and non-profit institutions. Currently, he is creating compelling experiences for virtual reality at Oculus VR at Facebook in Menlo Park, California.</p>

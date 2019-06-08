@@ -28,7 +28,7 @@ const IndexPage = ({ data, pathContext }) => {
 	return(
 		<div>
 			<Header menuItem="About" menuLink="/about" />
-			<h1>Inter– <br /> disciplinary <br /> designer <br /> & director.</h1>
+			<h1>Inter– T<br /> disciplinary <br /> designer <br /> & director.</h1>
 			<p className="select-projects">Selected Projects</p>
 			<div id="indexPage" className="wrapper-grid">
 				{data.allContentfulPhotoGallery.edges.map((edge) => <BlogPost key={edge.node.id} node={edge.node} />)}

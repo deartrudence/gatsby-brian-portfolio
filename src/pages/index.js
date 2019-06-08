@@ -1,75 +1,38 @@
 import React from 'react'
+import ReactPlayer from 'react-player';
 import Link from 'gatsby-link'
 import Footer from '../components/Footer'
-import './index.css'
 import Header from '../components/Header'
 
-const BlogPost = ({node}) => {
-  return (
-    <div key={node.id} className="project-tile">
-      <Link
-        to={node.slug}
-      >
-      <div className="project-tile-image">
-        <img src={node.coverImage.file.url} alt="" />
-      </div>
-      <p className="title">{node.title.title}</p>
-      {node.subtext ?
-        <p className="subtext">{node.subtext.subtext}</p> : null
-      }
-      </Link>
-    </div>
-  )
+const Cover = () => (
+  <div className="cover-page">
+    <Header menuItem="Work" menuLink="/work" />
+    {/* <h1 className="desktop-only">Profile</h1>
+		<h1 className="mobile-only">Inter– <br /> disciplinary <br /> designer <br /> & director.</h1>
+		<p className="about-description">A multidisciplinary designer, </p> */}
+    <div className="wrapper-grid">
+      <div className="player-wrapper">
+        <ReactPlayer
+          url={`https://vimeo.com/338794782`}
+          playing
+          loop
+          config={{
+            vimeo: {
+              playerOptions: { autoplay: true, setVolume: 0 }
+            }
+          }}
+          className='react-player'
+          width='100%'
+          height='100%' />
 
-}
-const IndexPage = ({data}) => (
-  <div>
-    <Header menuItem="About"menuLink="/about" />
-    <h1>Inter– <br/> disciplinary <br/> designer <br/> & director.</h1>
-    <p className="select-projects">Selected Projects</p>
-    <div id="indexPage" className=" index-page wrapper-grid">
-      {data.allContentfulPhotoGallery.edges.map((edge) => <BlogPost key={edge.node.id} node={edge.node} /> )}
+      </div>
+
+
+
+
     </div>
     <Footer />
   </div>
 )
 
-export default IndexPage
-
-export const pageQuery = graphql`
-  query indexQuery {
-    allContentfulPhotoGallery {
-      edges {
-        node {
-          id
-          slug
-          subtext {
-            id
-            subtext
-          }
-          title {
-            title
-          }
-          coverImage{
-            file{
-              url
-            }
-          }
-          images {
-            id
-            photo {
-              id
-              description
-              file {
-                url
-                fileName
-                contentType
-              } 
-            }
-          }
-        }
-      }			
-    }
-  }
-`
-
+export default Cover
