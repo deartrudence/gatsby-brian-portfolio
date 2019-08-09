@@ -13,7 +13,7 @@ const Cover1 = () => (
 		<div className="wrapper-grid">
 			<div className="player-wrapper">
 				<ReactPlayer
-					url={`https://vimeo.com/338794782`}
+					url={`https://vimeo.com/350627945`}
 					playing
 					loop
 					config={{
