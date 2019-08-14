@@ -18,7 +18,7 @@ class BlogPost extends Component {
 		const {heroImage} = this.props.data.contentfulPhotoGallery
 		return (
 			<div>
-				<Header menuItem={title.title} menuLink="/" close={true}/>
+				<Header menuItem={title.title} menuLink="/work" close={true}/>
 				{heroImage ? 
 					<img className="hero-image" src={heroImage.file.url} alt=""/> : null
 				}

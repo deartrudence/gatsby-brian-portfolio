@@ -17,36 +17,28 @@ class Header extends Component {
     }
   
     toggleSocial = () => {
-      console.log(this.state.social_classes)
-      console.log(this.state.ex)
+
       if (this.state.social_classes === "hidden"){
         this.setState({ social_classes: "" })
-        console.log('yes hidden')
       } else {
         this.setState({ social_classes: "hidden" })
-        console.log('no hidden')
       }
-      console.log('hidden', this.state.social_classes)
       if (this.state.ex === 'ex') {
         this.setState({ ex: '' })
       } else {
         this.setState({ ex: 'ex' })
       }
-      console.log('ex', this.state.ex)
     }
     enterSocial = () => {
       if(window.innerWidth > 500){
-        console.log('enter social')
         this.setState({social_classes: ""})
       }
     }
     leaveSocial = () => {
-      console.log('leave social')
       this.setState({social_classes: "hidden"})
     }
 
   render() {
-    console.log('in render',this.state.social_classes )
     return (
       <nav>
         <div className="nav-wrapper">
@@ -69,7 +61,7 @@ class Header extends Component {
             onClick={this.toggleSocial}
           >
           { this.props.close ?
-            <Link to="/" className="close">
+            <Link to="/work" className="close">
               <p><img src={close_icon} alt=""/>Close</p>
             </Link>
             :
