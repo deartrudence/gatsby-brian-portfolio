@@ -6,8 +6,8 @@ const Footer = () => (
 	<footer>
 			<div className="address">
 				<p className="contact">Contact</p>
-				<p>Prospect Lefferts Gardens</p>
-				<p>Brooklyn, New York</p>
+				<p>San Francisco Bay Area</p>
+				<p>California, USA</p>
 				<Link
 					to="/" 
 				>
